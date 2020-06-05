@@ -1,11 +1,16 @@
-function Hello () {
-		return (
-			<React.Fragment>
-				<h1>Hello there!</h1>
-				<h1>Hello there!</h1>
-				<h1>Hello there!</h1>
-			</React.Fragment>
-		);
+class App extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+		<Hello 
+			to='Jermaine' 
+			from='Jackie'
+			img="friends.jpeg"
+			alt="Friends Pic"
+		/>
+      </React.Fragment>
+    );
+  }
 }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
